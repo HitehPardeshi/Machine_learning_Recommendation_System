@@ -23,7 +23,6 @@ For this analysis I will be working as a Data Scientist for a grocery store that
 2. Recommendation systems - Content-based filtering and Collaborative filtering 
 3. NLP product search engine   
 5. Market Basket analysis  
-6. FLASK Website interface 
  
   
 ### Data    
@@ -125,29 +124,9 @@ Finally, this output shows what products are recommended to each cluster if they
          width="400" height="400"> 
 
 
-### FLASK app  
-[View the FLASK app](https://github.com/melodygr/grocery_recommendation/tree/main/flask_app "FLASK app")  
-  
-I have begun the development of a FLASK app to generate grocery recommendations through a website.  It currently has four pages: the index, nlp recommender, ratings and svd recommender.  However, more work needs to be done on the functionality of the pages and their ability to return the recommendations.  The NLP recommender is up-to-date but the SVD recommender takes a long time to run because it fits and predicts a whole new model based on the user's input.  If I can find a cluster for the new user, that should shorten the run time considerably.  I also intend to add a page for the market basket analysis that will suggest products based on the association rules for each cluster.  More to follow.
-
-![FLASK app](https://github.com/melodygr/grocery_recommendation/blob/main/Images/svd_page_screenshot.png "FLASK app")
-
-
 ### Conclusions  
 * Cluster data is well-suited for market segmentation and targeted marketing
 * It is important to look at the buying power of each cluster to determine how much effort to put into targeting
 * The NLP search engine would be a useful tool for online shopping recommendations
 * The SVD model created much better predictions when we lowered the rating scale of the products to 1-5
 * Popularity bias skewed the SVD model but it can be controlled by personalized re-ranking of the recommendation
-
-  
-### Next Steps / Future Work  
-  
-* Cluster again allowing more than 20 clusters to make some of the big clusters smaller?
-* Create a dashboard using DASH for graphical representation of the clusters  
-* Generate word embeddings for the search engine for more specific search results
-* Calculate and visualize error on the surprise model
-* Create SQL tables of the data and load onto AWS
-* Add association rules to FLASK app
-* Use Heroku to push local FLASK app to the web
-
