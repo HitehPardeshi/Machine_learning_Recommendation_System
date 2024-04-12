@@ -1,5 +1,5 @@
-# Grocery Recommendation on Instacart Data  
-
+# Machine Learning - Recommendation System
+# Grocery Dataset
 
 <img src= 
 "Images/food_and_computer.jpg" 
